@@ -1,0 +1,4 @@
+{
+  "module.my_addon_hello.name": "Hallo",
+  "module.my_addon_hello.description": "Sagt Hallo im HUD."
+}

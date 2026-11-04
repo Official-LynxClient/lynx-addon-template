@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "my-addon",
+  "version": "${version}",
+  "name": "My Addon",
+  "description": "What your addon does, in one sentence.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "lynx": ["com.example.myaddon.MyAddon"] },
+  "custom": { "lynx": { "api": 1 } }
+}
