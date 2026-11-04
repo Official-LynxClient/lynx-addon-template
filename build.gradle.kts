@@ -9,11 +9,11 @@ repositories {
 }
 
 dependencies {
-    // compileOnly: LynxClient brings the API at runtime – never bundle it into your jar
+    // compileOnly: LynxClient brings the API at runtime, never bundle it into your jar
     compileOnly("net.lynxclient:lynx-api:${property("lynx_api")}")
 }
 
-// LynxClient runs on Java 17 (1.8.9) up to 25 (26.x) – build for the lowest
+// LynxClient runs on Java 17 (1.8.9) up to 25 (26.x), so build for the lowest
 tasks.withType<JavaCompile>().configureEach {
     options.release = 17
     options.encoding = "UTF-8"
