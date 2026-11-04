@@ -14,8 +14,14 @@ A ready-to-build addon for [LynxClient](https://lynxclient.de): one HUD widget (
    ./gradlew build
    ```
 
-   The jar is in `build/libs/`.
-4. Try it: in the LynxClient launcher turn on **Settings → Developer → Load unsigned addons**, copy the jar into **Addons → Open folder** and start any profile.
+   The jar is in `build/libs/`. The build also checks the addon against the store rules.
+4. Try it: in the LynxClient launcher turn on **Settings → Developer → Load unsigned addons**, then run
+
+   ```bash
+   ./gradlew runLynx
+   ```
+
+   It copies the addon into LynxClient's addon folder and the launcher starts the game.
 5. Publish it in the store: [docs.lynxclient.de/store/publishing](https://docs.lynxclient.de/store/publishing).
 
 ## Licence
